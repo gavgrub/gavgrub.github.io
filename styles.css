@@ -1,0 +1,48 @@
+body {
+    font-family: 'Noto Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style for the header */
+.title {
+    padding: 20px 20px 20px 20px;
+}
+.title h1 {
+    font-size: 40px;
+    color: #202933;
+    text-align: center;
+    font-weight: bold;
+}
+.title p {
+    font-size: 18px;
+    text-align: center;
+}
+
+/* Style for social media buttons */
+.socialButtons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.socialButtons a {
+    text-decoration: none;
+}
+.socialButtons button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+}
+.socialButtons button:hover i {
+    color: #459BCF;
+    transition: color 0.2s ease;
+}
+.socialButtons i {
+    width: 20px;
+    height: 20px;
+    color: #202933;
+    font-size: 20px;
+}
