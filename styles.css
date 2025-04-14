@@ -35,6 +35,13 @@ body {
     overflow: hidden
 }
 
+/* Styling for the main window when on phones*/
+@media (max-width: 768px) {
+    .title {
+        width: 90%;
+    }
+}
+
 /* Style for social media buttons */
 .socialButtons {
     display: flex;

@@ -35,8 +35,8 @@ function createSquares() {
             const square = document.createElement('div');
             
             // Square attributes
-            square.style.width = `${SIZE}px`;
-            square.style.height = `${SIZE}px`;
+            square.style.width = `${SIZE + 1}px`;
+            square.style.height = `${SIZE + 1}px`;
             square.style.backgroundColor = DARKCOLOR;
             square.style.position = "absolute";
 
