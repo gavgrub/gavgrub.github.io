@@ -36,7 +36,10 @@ body {
 }
 
 /* Styling for the main window when on phones*/
-@media (max-width: 768px) {
+@media (max-aspect-ratio: 3/4) {
+    .titleBackground {
+        height: 600px;
+    }
     .title {
         width: 90%;
     }
