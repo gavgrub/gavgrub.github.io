@@ -6,7 +6,12 @@ body {
 
 /* Style for the header */
 .title {
-    padding: 20px 20px 20px 20px;
+    padding: 10px;
+    background-color: #DBE2E9;
+    border-radius: 8px;
+    text-align: center;
+    width: 30%;
+    min-width: 300px;
 }
 .title h1 {
     font-size: 40px;
@@ -17,6 +22,17 @@ body {
 .title p {
     font-size: 18px;
     text-align: center;
+}
+
+.titleBackground {
+    background-color: rgba(0, 0, 0, 0);
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 300px;
+    position: relative;
+    overflow: hidden
 }
 
 /* Style for social media buttons */
