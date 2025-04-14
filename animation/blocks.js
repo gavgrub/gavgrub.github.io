@@ -55,14 +55,14 @@ function createSquares() {
 }
 
 // Animation loop 
-function animate() {
+function animateBlocks() {
     time += 0.001;
     for (const s of squares) {
         const color = interpolateColor(LIGHTCOLOR, DARKCOLOR, Math.tanh(4 * noise.simplex3(s.x * 0.25, s.y * 0.25, time)) * 0.5 + 0.5);
         s.el.style.backgroundColor = `rgb(${color[0]}, ${color[1]}, ${color[2]})`;
     }
 
-    requestAnimationFrame(animate);
+    requestAnimationFrame(animateBlocks);
 }
 
 // Initial creation of squares
@@ -74,4 +74,4 @@ window.addEventListener('resize', () => {
 });
 
 // Animate
-requestAnimationFrame(animate);
+requestAnimationFrame(animateBlocks);

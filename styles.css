@@ -1,14 +1,45 @@
 body {
     font-family: 'Noto Sans', sans-serif;
+    overflow-x: hidden;
     margin: 0;
     padding: 0;
+    background-color: #DBE2E9;
+}
+
+/* Style for the navigation bar */
+.navbar {
+    background: linear-gradient(to bottom, #141517, #0A0D10);
+    background-color: #141517;
+    border-width: 5px;
+    width: 100%;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+.navbar a {
+    color: #459BCF;
+    margin: 10px;
+    text-decoration: none;
+}
+.navbar a:hover {
+    color: #D98410;
+    transition: color 0.2s ease;
+}
+
+/* Style for the content divider */
+.contentDivider {
+    background: linear-gradient(to bottom, #0A0D10, #141517);
+    background-color: #141517;
+    border-width: 5px;
+    padding: 10px;
+    width: 100%;
 }
 
 /* Style for the header */
 .title {
     padding: 10px;
     background-color: #DBE2E9;
-    border-radius: 8px;
     text-align: center;
     width: 30%;
     min-width: 300px;
@@ -32,7 +63,8 @@ body {
     display: flex;
     height: 300px;
     position: relative;
-    overflow: hidden
+    overflow: hidden;
+    width: 100%;
 }
 
 /* Style for social media buttons */
@@ -53,7 +85,7 @@ body {
     height: 20px;
 }
 .socialButtons button:hover i {
-    color: #459BCF;
+    color: #D98410;
     transition: color 0.2s ease;
 }
 .socialButtons i {
@@ -61,4 +93,33 @@ body {
     height: 20px;
     color: #202933;
     font-size: 20px;
+}
+
+/* Style for the text box */
+.container {
+    display: flex;
+    width: 100vw; 
+    justify-content: space-between;
+    height: 200%;
+    min-height: 600px;
+  }
+  
+.imageBox {
+    flex: 1;             
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #202933;
+}
+  
+.textBox {
+    flex: 2;
+    padding: 20px 40px;
+    text-align: left;
+    background-color: #DBE2E9;
+}
+  
+.robotImage {
+    max-width: 50%;
+    height: auto;  
 }

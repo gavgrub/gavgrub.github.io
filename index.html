@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>GavGrub</title>
+    <title>Gavin Grubert - Home</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -9,12 +9,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
+    <!--Navigation bar-->
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+    </div>
 
     <!--My name, short description, and social media links-->
     <div class="titleBackground">
         <div class="title">
             <h1>Gavin Grubert</h1>
-            <p> BSc Computer Science Student</p>
+            <p>BSc Computer Science Student</p>
 
             <!--Social media links-->
             <div class="socialButtons">
@@ -42,9 +49,27 @@
         </div>
     </div>
 
+    <!--Divider for information and content area-->
+    <div class="contentDivider"></div>
+
+    <!--Personal statement-->
+    <div class="container">
+        <div class="imageBox">
+            <img src="img/robot.png" alt="robot" class="robotImage">
+        </div>
+        <div class="textBox">
+            <h2>About</h2>
+            <p>Wassup nerds.</p>
+        </div>
+    </div>
+
+    <!--Divider for information and content area-->
+    <div class="contentDivider"></div>
+
     <!--Scripts-->
-    <script src='perlin.js'></script>
-    <script src="blocks.js"></script>
+    <script src='util/perlin.js'></script>
+    <script src="animation/blocks.js"></script>
+    <script src="animation/dancing.js"></script>
 
 </body>
 </html>
