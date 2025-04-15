@@ -3,7 +3,7 @@ body {
     overflow-x: hidden;
     margin: 0;
     padding: 40px 0px 0px 0px;
-    background-color: #DBE2E9;
+    background-color: #9c9a97;
 }
 
 /* Style for the navigation bar */
@@ -40,6 +40,7 @@ body {
 .title {
     padding: 10px;
     background-color: #DBE2E9;
+    background: linear-gradient(to bottom, #DBE2E9, #b0b6bc);
     text-align: center;
     width: 30%;
     min-width: 300px;
@@ -95,31 +96,48 @@ body {
     font-size: 20px;
 }
 
-/* Style for the text box */
-.container {
+/* Style for the big divider */
+.filler {
+    width: 100%;
     display: flex;
-    width: 100vw; 
-    justify-content: space-between;
-    height: 200%;
-    min-height: 600px;
-  }
-  
-.imageBox {
-    flex: 1;             
-    display: flex;
-    justify-content: center;
     align-items: center;
-    background-color: #202933;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+    background-color: #9c9a97;
+    background: linear-gradient(to bottom, #9c9a97, #8c8985);
+
 }
-  
 .textBox {
-    flex: 2;
-    padding: 20px 40px;
-    text-align: left;
-    background-color: #DBE2E9;
+    width: 100%;
+    max-width: 800px;
+    height: fit-content;
+    padding: 40px;
+    background: linear-gradient(to bottom, #DBE2E9, #b0b6bc);
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    border-color: #141517;
+    border-width: 10px;
+    border-style: solid;
 }
-  
-.robotImage {
-    max-width: 50%;
-    height: auto;  
+.textBox h2 {
+    color: #202933;
+    font-size: bold;
+}
+.headshot {
+    width: 300px;
+    height: 300px;
+    border-color: #141517;
+    border-width: 10px;
+    border-style: solid;
+}
+/* Media query for small screens */
+@media (max-width: 800px) {
+    .filler {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 }
