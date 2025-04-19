@@ -1,9 +1,6 @@
-const titleBackground = document.querySelector(".titleBackground");
+console.log("blocks.js loaded");
 
-// Constants for rendering the squares
-const SIZE = 40;
-const LIGHTCOLOR = [32, 41, 51];
-const DARKCOLOR = [10, 13, 16];
+const titleBackground = document.querySelector(".titleBackground");
 
 // Time variable for animation
 var time = 0;
@@ -32,6 +29,7 @@ function createSquares() {
     // Add a bunch of new squares
     for (let y = 0; y < titleBackground.clientHeight; y += SIZE) {
         for (let x = 0; x < titleBackground.clientWidth; x += SIZE) {
+
             const square = document.createElement('div');
             
             // Square attributes
@@ -43,7 +41,7 @@ function createSquares() {
             square.style.left = `${x}px`;
             square.style.top = `${y}px`;
 
-            square.style.zIndex = '-1';
+            square.style.zIndex = '0';
             
             // Add square to the screen
             titleBackground.appendChild(square);

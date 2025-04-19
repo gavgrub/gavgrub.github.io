@@ -1,3 +1,5 @@
+console.log("perlin.js loaded");
+
 /*
  * A speed-improved perlin and simplex noise algorithms for 2D.
  *

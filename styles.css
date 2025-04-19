@@ -2,38 +2,8 @@ body {
     font-family: 'Noto Sans', sans-serif;
     overflow-x: hidden;
     margin: 0;
-    padding: 40px 0px 0px 0px;
-    background-color: #b0b6bc;
-}
-
-/* Style for the navigation bar */
-.navbar {
-    background: linear-gradient(to bottom, #141517, #0A0D10);
-    background-color: #141517;
-    border-width: 5px;
-    width: 100%;
-    padding: 10px;
-    position: fixed;
-    top: 0;
-    z-index: 1000;
-}
-.navbar a {
-    color: #459BCF;
-    margin: 10px;
-    text-decoration: none;
-}
-.navbar a:hover {
-    color: #D98410;
-    transition: color 0.2s ease;
-}
-
-/* Style for the content divider */
-.contentDivider {
-    background: linear-gradient(to bottom, #0A0D10, #141517);
-    background-color: #141517;
-    border-width: 5px;
-    padding: 10px;
-    width: 100%;
+    padding: 0px;
+    background-color: #9c9a97;
 }
 
 /* Style for the header */
@@ -44,6 +14,8 @@ body {
     text-align: center;
     width: 30%;
     min-width: 300px;
+    border-radius: 20px;
+    z-index: 1;
 }
 .title h1 {
     font-size: 40px;
@@ -57,7 +29,7 @@ body {
 }
 
 .titleBackground {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: #202933;
     padding: 10px;
     align-items: center;
     justify-content: center;
@@ -86,7 +58,7 @@ body {
     height: 20px;
 }
 .socialButtons button:hover i {
-    color: #D98410;
+    color: #459BCF;
     transition: color 0.2s ease;
 }
 .socialButtons i {
@@ -96,48 +68,102 @@ body {
     font-size: 20px;
 }
 
-/* Style for the big divider */
-.filler {
-    width: 100%;
-    display: flex;
-    align-items: center;
+/* Style for body */
+.body {
     justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
     padding: 20px;
     gap: 20px;
-    background-color: #9c9a97;
-    background: linear-gradient(to bottom, #9c9a97, #8c8985);
-
 }
+
+/* Style for text box containing an image */
+.textAndImage {
+    width: 100%;
+    min-width: 300px;
+    max-width: 900px;
+    padding: 20px;
+    background-color: #DBE2E9;
+    background: linear-gradient(to bottom, #DBE2E9, #b0b6bc);
+    border-radius: 20px;
+    justify-content: center;
+    clear: both;
+    gap: 20px;
+    
+}
+.textAndImage.large {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.textAndImage h2 {
+    color: #202933;
+    font-weight: bold;
+    margin: 0
+}
+.textAndImage a {
+    color: #202933;
+}
+.textAndImage a:hover {
+    color: #459BCF;
+    transition: color 0.2s ease;
+}
+
+.headshot {
+    width: 300px;
+    height: auto;
+    border-radius: 20px;
+}
+.headshot.small {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.left {
+    float:left;
+}
+.right {
+    float:right;
+}
+
+/* Style for text box */
 .textBox {
     width: 100%;
-    max-width: 800px;
-    height: fit-content;
-    padding: 40px;
+    min-width: 300px;
+    max-width: 900px;
+    padding: 20px;
+    background-color: #DBE2E9;
     background: linear-gradient(to bottom, #DBE2E9, #b0b6bc);
-    box-sizing: border-box;
-    overflow-wrap: break-word;
-    word-wrap: break-word;
-    border-color: #141517;
-    border-width: 10px;
-    border-style: solid;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
 }
 .textBox h2 {
     color: #202933;
-    font-size: bold;
+    font-weight: bold;
+    margin: 0;
 }
-.headshot {
-    width: 300px;
-    height: 300px;
-    border-color: #141517;
-    border-width: 10px;
-    border-style: solid;
+.textBox a {
+    color: #202933;
 }
-/* Media query for small screens */
-@media (max-width: 800px) {
-    .filler {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+.textBox a:hover {
+    color: #459BCF;
+    transition: color 0.2s ease;
+}
+
+/* Swaps out different types of style based on the width of the screen */
+.large {
+    display: flex !important;
+}
+.small {
+    display:none !important;
+}
+@media (max-width: 768px) {
+    .large {
+        display: none !important;
+    }
+    .small {
+        display: flex !important;
     }
 }
