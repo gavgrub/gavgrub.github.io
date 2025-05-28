@@ -2,168 +2,96 @@ body {
     font-family: 'Noto Sans', sans-serif;
     overflow-x: hidden;
     margin: 0;
-    padding: 0px;
-    background-color: #9c9a97;
+    background-color: rgb(25, 25, 25);
+    height: 100%;
+    padding: 0;
 }
 
-/* Style for the header */
-.title {
-    padding: 10px;
-    background-color: #DBE2E9;
-    background: linear-gradient(to bottom, #DBE2E9, #b0b6bc);
-    text-align: center;
-    width: 30%;
-    min-width: 300px;
-    border-radius: 20px;
-    z-index: 1;
-}
-.title h1 {
-    font-size: 40px;
-    color: #202933;
-    text-align: center;
-    font-weight: bold;
-}
-.title p {
-    font-size: 18px;
-    text-align: center;
-}
-
-.titleBackground {
-    background-color: #202933;
-    padding: 10px;
-    align-items: center;
-    justify-content: center;
+/* Top bar styles */
+.top-bar {
     display: flex;
-    height: 300px;
-    position: relative;
-    overflow: hidden;
-    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10%;
+    height: 40px;
+    color: white;
+    font-size: 14px;
 }
 
-/* Style for social media buttons */
-.socialButtons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-}
-.socialButtons a {
+.top-bar .nav-links a {
+    color: white;
+    background: none;
+    filter: none;
     text-decoration: none;
-}
-.socialButtons button {
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-    width: 20px;
-    height: 20px;
-}
-.socialButtons button:hover i {
-    color: #459BCF;
-    transition: color 0.2s ease;
-}
-.socialButtons i {
-    width: 20px;
-    height: 20px;
-    color: #202933;
-    font-size: 20px;
+    margin-left: 9px;
+    transition: color 0.1s ease;
+    font-size: 18px;
 }
 
-/* Style for body */
-.body {
+.top-bar .nav-links a:hover {
+    color: rgb(69, 155, 207);
+}
+
+/* Title Background styles */
+.title-background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    color: white;
+    position: relative;
+}
+
+.title-background .title {
     justify-content: center;
     align-items: center;
     display: flex;
-    flex-direction: column;
-    padding: 20px;
-    gap: 20px;
+    padding: 10px;
+    font-size: 24px;
+    background-color: rgb(25, 25, 25);
+    height: 50%;
+    width: 200px;
 }
 
-/* Style for text box containing an image */
-.textAndImage {
-    width: 100%;
-    min-width: 300px;
-    max-width: 900px;
-    padding: 20px;
-    background-color: #DBE2E9;
-    background: linear-gradient(to bottom, #DBE2E9, #b0b6bc);
-    border-radius: 20px;
-    justify-content: center;
-    clear: both;
-    gap: 20px;
-    
-}
-.textAndImage.large {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-}
-.textAndImage h2 {
-    color: #202933;
-    font-weight: bold;
-    margin: 0
-}
-.textAndImage a {
-    color: #202933;
-}
-.textAndImage a:hover {
-    color: #459BCF;
-    transition: color 0.2s ease;
-}
-
-.headshot {
-    width: 300px;
-    height: auto;
-    border-radius: 20px;
-}
-.headshot.small {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-.left {
-    float:left;
-}
-.right {
-    float:right;
-}
-
-/* Style for text box */
-.textBox {
-    width: 100%;
-    min-width: 300px;
-    max-width: 900px;
-    padding: 20px;
-    background-color: #DBE2E9;
-    background: linear-gradient(to bottom, #DBE2E9, #b0b6bc);
-    display: flex;
-    flex-direction: column;
-    border-radius: 20px;
-}
-.textBox h2 {
-    color: #202933;
-    font-weight: bold;
+/* Content styles */
+.content .container h1 {
+    font-size: 36px;
     margin: 0;
-}
-.textBox a {
-    color: #202933;
-}
-.textBox a:hover {
-    color: #459BCF;
-    transition: color 0.2s ease;
+    text-align: center;
 }
 
-/* Swaps out different types of style based on the width of the screen */
-.large {
-    display: flex !important;
+.content .container p {
+    text-align: left;
 }
-.small {
-    display:none !important;
+
+.content .container ul {
+    margin: 0 0 20px 0;
 }
-@media (max-width: 768px) {
-    .large {
-        display: none !important;
-    }
-    .small {
-        display: flex !important;
+
+.content .container a {
+    color: rgb(69, 155, 207);
+}
+
+.content .container .image {
+    width: 50%;
+    height: auto;
+    max-width: 200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-image: linear-gradient(rgb(24, 23, 21), rgb(34, 32, 30));
+    padding: 36px 25%;
+    gap: 16px;
+}
+
+@media (max-width: 800px) {
+    .content {
+        padding: 36px 10%;
     }
 }

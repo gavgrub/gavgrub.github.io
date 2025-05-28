@@ -8,88 +8,54 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 <body>
 
-    <!--My name, short description, and social media links (header)-->
-    <div class="titleBackground">
-        <div class="title">
-            <h1>Gavin Grubert</h1>
-            <p>BSc Computer Science Student</p>
-
-            <!--Social media links-->
-            <div class="socialButtons">
-                <a href="https://www.linkedin.com/in/gavin-grubert/" target="_blank">
-                    <button>
-                        <i class="fa-brands fa-linkedin"></i>
-                    </button>
-                </a>
-                <a href="https://www.youtube.com/@gavgrub" target="_blank">
-                    <button>
-                        <i class="fa-brands fa-youtube"></i>
-                    </button>
-                </a>
-                <a href="https://github.com/gavgrub" target="_blank">
-                    <button>
-                        <i class="fa-brands fa-github"></i>
-                    </button>
-                </a>
-                <a href="https://gavgrub.itch.io/" target="_blank">
-                    <button>
-                        <i class="fa-brands fa-itch-io"></i>
-                    </button>
-                </a>
-            </div>
-        </div>
-    </div>
-
-    <!--Body of the website-->
-    <div class="body">
-
-        <!-- Body of the website -->
-<div class="body">
-
-    <!-- About me, large screen -->
-    <div class="large textAndImage">
-        <div class="left">
-            <h2>About Me</h2>
-            <p>Hello, I'm Gavin. I am a student from Canada studying computer science and mathematics at the <a href="https://www.ucalgary.ca/" target="_blank">University of Calgary</a>. There, I take courses in a number of subjects such as programming, discrete math, data structures, statistics, and calculus. I aspire to develop my skills to pursue a career in computer graphics or software engineering.</p>
-            <p>I work for the <a href="https://godinos.com/" target="_blank">University of Calgary Dinos</a>, where I act in a number of roles. These include gate check: selling and scanning tickets, access control: restricting access to key locations, and concession: preparing food and operating point of sale systems.</p>
-            <p>Outside of my academic and career-oriented interests, I enjoy music, history, and gaming. These activities help me recharge and refocus on my professional goals.</p>
-        </div>
-        <img src="img/headshot.png" alt="Headshot of Gavin Grubert" class="headshot right">
-    </div>
-
-    <!-- About me, small screen -->
-    <div class="small textBox">
-        <h2>About Me</h2>
-        <p>Hello, I'm Gavin. I am a student from Canada studying computer science and mathematics at the <a href="https://www.ucalgary.ca/" target="_blank">University of Calgary</a>. There, I take courses in a number of subjects such as programming, discrete math, data structures, statistics, and calculus. I aspire to develop my skills to pursue a career in computer graphics or software engineering.</p>
-        <p>I work for the <a href="https://godinos.com/" target="_blank">University of Calgary Dinos</a>, where I act in a number of roles. These include gate check: selling and scanning tickets, access control: restricting access to key locations, and concession: preparing food and operating point of sale systems.</p>
-        <p>Outside of my academic and career-oriented interests, I enjoy music, history, and gaming. These activities help me recharge and refocus on my professional goals.</p>
-        <img src="img/headshot.png" alt="Headshot of Gavin Grubert" class="headshot small">
-    </div>
-
-    <!-- Contact Information -->
-    <div class="textBox">
-        <h2>Contact</h2>
-        <p>Feel free to reach out to me through email.</p>
-        <a href="mailto:grubertgavin@gmail.com" target="_blank">
-            <i class="fa-solid fa-envelope"></i>
-            grubertgavin@gmail.com
+<!-- Top Bar -->
+<div class ="top-bar">
+    <div class="name">Gavin Grubert</div>
+    <nav class="nav-links">
+        <a href="https://www.youtube.com/@gavgrub" target="_blank">
+            <i class="fa-brands fa-youtube"></i>
         </a>
-        <a href="https://maps.app.goo.gl/qGiVR9GxvxWMsxRP7" target="_blank">
-            <i class="fa-solid fa-location-dot"></i>
-            Medicine Hat, Alberta
+        <a href="https://gavgrub.itch.io/" target="_blank">
+            <i class="fa-brands fa-itch-io"></i>
         </a>
+        <a href="https://github.com/gavgrub" target="_blank">
+            <i class="fa-brands fa-github"></i>
+        </a>
+    </nav>
+</div>
+
+<!-- Title -->
+<div class="title-background">
+    <div class="title">
+        <h1>Home</h1>
+    </div>
+</div>
+
+<!-- Content -->
+<div class="content">
+
+    <div class="container">
+        <h1>About</h1>
+        <p>Gavin is a computer science and mathematics student, studying at the University of Calgary, who aspires to become a research scientist in a related field. In his free time, Gavin enjoys chess, playing guitar, and making video games.</p>
+    </div>
+
+    <div class="container">
+        <h1>Contact</h1>
+        <p>Get into contact with me using the following links:</p>
+        <ul>
+            <li>Email: <a href="mailto:grubertgavin@gmail.com">grubertgavin@gmail.com</a></li>
+        </ul>
     </div>
 
 </div>
 
-    </div>
-
-    <!--Scripts-->
-    <script src="util/helper.js"></script>
-    <script src='util/perlin.js'></script>
-    <script src="animation/blocks.js"></script>
+<!-- Scripts -->
+<script src='util/perlin.js'></script>
+<script src="animation/blocks.js"></script>
 
 </body>
+
 </html>
