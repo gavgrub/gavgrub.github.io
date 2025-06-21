@@ -1,9 +1,9 @@
 // Constants for rendering the squares
-const SIZE = 40;
-const LIGHTCOLOR = [70, 90, 112];
-const DARKCOLOR = [32, 41, 51];
+const SIZE = 80;
+const LIGHTCOLOR = [21, 27, 33];
+const DARKCOLOR = [10, 13, 16];
 
-const titleBackground = document.querySelector(".title-background");
+const titleBackground = document.querySelector(".header");
 
 // Time variable for animation
 var time = 0;
@@ -14,6 +14,7 @@ noise.seed(Math.random());
 // Function which interpolates between two colors
 // Based on a faction between 0 and 1
 function interpolateColor(color1, color2, factor) {
+    factor = Math.max(0, Math.min(1, factor));
     const result = color1.slice();
     for (let i = 0; i < 3; i++) {
       result[i] = Math.round(result[i] + factor * (color2[i] - color1[i]));
@@ -29,8 +30,10 @@ function createSquares() {
     const existingSquares = titleBackground.querySelectorAll('.square');
     existingSquares.forEach(square => square.remove());
 
+    console.log("Creating squares...");
+
     // Add a bunch of new squares
-    for (let y = 0; y < titleBackground.clientHeight; y += SIZE) {
+    for (let y = 0; y < titleBackground.clientHeight + SIZE; y += SIZE) {
         for (let x = 0; x < titleBackground.clientWidth; x += SIZE) {
 
             const square = document.createElement('div');

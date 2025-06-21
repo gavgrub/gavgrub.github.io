@@ -1,60 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Gavin Grubert - Home</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Gavin Grubert</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
 
-<!-- Top Bar -->
-<div class ="top-bar">
-    <div class="name">Gavin Grubert</div>
-    <nav class="nav-links">
-        <a href="https://www.youtube.com/@gavgrub" target="_blank">
-            <i class="fa-brands fa-youtube"></i>
-        </a>
-        <a href="https://gavgrub.itch.io/" target="_blank">
-            <i class="fa-brands fa-itch-io"></i>
-        </a>
-        <a href="https://github.com/gavgrub" target="_blank">
-            <i class="fa-brands fa-github"></i>
-        </a>
-    </nav>
-</div>
+<!-- Navigation Bar -->
+<nav class="navbar">
 
-<!-- Title -->
-<div class="title-background">
-    <div class="title">
-        <h1>Home</h1>
+    <!-- Website Tabs-->
+    <div class="navbarContainer">
+        <a href="index.html">Home</a>
     </div>
-</div>
 
-<!-- Content -->
-<div class="content">
+    <!-- Social Media Links -->
+    <div class="navbarContainer">
+        <a href="https://www.youtube.com/@gavgrub"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://www.instagram.com/gavgrub/"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://gavgrub.itch.io/"><i class="fa-brands fa-itch-io"></i></a>
+        <a href="https://github.com/"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/gavin-grubert//"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
 
+</nav>
+
+<!-- Header -->
+<header class="header">
+    <div class="headerText">
+        <h1>Gavin Grubert</h1>
+        <p>Student Researcher</p>
+    </div>
+</header>
+
+<!-- Body -->
+<div class="body">
     <div class="container">
-        <h1>About</h1>
-        <p>Gavin is a computer science and mathematics student, studying at the University of Calgary, who aspires to become a research scientist in a related field. In his free time, Gavin enjoys chess, playing guitar, and making video games.</p>
+        <div class="containerText">
+            <h2>About</h2>
+            <p>Gavin is a computer science and mathematics student, studying at the University of Calgary, who aspires to become a scientist in a related field. In his free time, Gavin enjoys chess, playing guitar, and making video games.</p>
+        </div>
+        <div class="containerText">
+            <h2>Contact</h2>
+            <p>Feel free to reach out by emailing me at <a href="mailto:grubertgavin@gmail.com">grubertgavin@gmail.com</a>.</p>
+        </div>
     </div>
-
-    <div class="container">
-        <h1>Contact</h1>
-        <p>Get into contact with me using the following links:</p>
-        <ul>
-            <li>Email: <a href="mailto:grubertgavin@gmail.com">grubertgavin@gmail.com</a></li>
-        </ul>
-    </div>
-
 </div>
 
 <!-- Scripts -->
-<script src='util/perlin.js'></script>
+<script src="util/perlin.js"></script>
 <script src="animation/blocks.js"></script>
+<script src="util/lock.js"></script>
 
 </body>
 
