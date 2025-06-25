@@ -3,10 +3,14 @@
 <head>
     <title>Gavin Grubert - Gallery</title>
     <link rel="icon" href="img/icon.png" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/gallery.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/macy@2"></script>
 </head>
 
 <body>
@@ -41,96 +45,88 @@
     </div>
 </div>
 
-<!-- Photo Gallery -->
 <div class="galleryContainer">
-    <div class="gallery">
+    <div class="macyContainer">
         <a target="_blank" href="img/gallery/sosand1.png">
             <img src="img/gallery/sosand1.png" alt="SOSAND Gameplay">
         </a>
-    </div>
-    <div class="gallery">
         <a target="_blank" href="img/gallery/sosand2.png">
             <img src="img/gallery/sosand2.png" alt="SOSAND Gameplay">
         </a>
-    </div>
-    <div class="gallery">
         <a target="_blank" href="img/gallery/rtp1.png">
             <img src="img/gallery/rtp1.png" alt="Robot Training Protocol Gameplay">
         </a>
-    </div>
-    <div class="gallery">
         <a target="_blank" href="img/gallery/fb1.png">
             <img src="img/gallery/fb1.png" alt="Fightbuild Gameplay">
         </a>
-    </div>
-    <!---->
-    <div class="gallery">
-        <a target="_blank" href="img/gallery/triangle.png">
-            <img src="img/gallery/triangle.png" alt="A triangle rendered in the terminal">
-        </a>
-    </div>
-    <div class="gallery">
         <a target="_blank" href="img/gallery/world.png">
             <img src="img/gallery/world.png" alt="A world generated with perlin noise">
         </a>
-    </div>
-    <div class="gallery">
         <a target="_blank" href="img/gallery/mandelbrot1.png">
             <img src="img/gallery/mandelbrot1.png" alt="Mandelbrot Set Visualization">
         </a>
-    </div>
-    <div class="gallery">
         <a target="_blank" href="img/gallery/mandelbrot2.png">
             <img src="img/gallery/mandelbrot2.png" alt="Mandelbrot Set Visualization">
         </a>
-    </div>
-
-    <div class="gallery">
         <a target="_blank" href="img/gallery/slope field.png">
             <img src="img/gallery/slope field.png" alt="slope field visualization tool">
         </a>
-    </div>
-    <div class="gallery">
         <a target="_blank" href="img/gallery/fb2.png">
             <img src="img/gallery/fb2.png" alt="Fightbuild Gameplay">
         </a>
-    </div>
-    <div class="gallery">
         <a target="_blank" href="img/gallery/dnd1.png">
             <img src="img/gallery/dnd1.png" alt="It's Die Not Dice Gameplay">
         </a>
-    </div>
-    <div class="gallery">
         <a target="_blank" href="img/gallery/guy.png">
             <img src="img/gallery/guy.png" alt="Image of an unfinished game">
         </a>
-    </div>
-    <div class="gallery">
         <a target="_blank" href="img/gallery/saturn.png">
             <img src="img/gallery/saturn.png" alt="Saturn in a solar system simulation">
         </a>
-    </div>
-    <div class="gallery">
         <a target="_blank" href="img/gallery/jupiter.png">
             <img src="img/gallery/jupiter.png" alt="Jupiter in a solar system simulation">
         </a>
-    </div>
-    <div class="gallery">
         <a target="_blank" href="img/gallery/level editor.png">
             <img src="img/gallery/level editor.png" alt="Level Editor">
         </a>
-    </div>
-    <div class="gallery">
         <a target="_blank" href="img/gallery/chess.png">
             <img src="img/gallery/chess.png" alt="Chess Game">
         </a>
-    </div>
-    <div class="gallery">
         <a target="_blank" href="img/gallery/ssrt.jpg">
             <img src="img/gallery/ssrt.jpg" alt="Schulich Space Rover Team">
         </a>
+        <a target="_blank" href="img/gallery/hm1.png">
+            <img src="img/gallery/hm1.png" alt="Hotel Management Software">
+        </a>
+        <a target="_blank" href="img/gallery/hm2.png">
+            <img src="img/gallery/hm2.png" alt="Hotel Management Software">
+        </a>
+        <a target="_blank" href="img/gallery/rivers.png">
+            <img src="img/gallery/rivers.png" alt="Rivers">
+        </a>
+        <a target="_blank" href="img/gallery/bubbles.png">
+            <img src="img/gallery/bubbles.png" alt="Rivers">
+        </a>
     </div>
 </div>
+
+<!-- Setup for masonry view of images -->
+<script src="https://cdn.jsdelivr.net/npm/macy@2"></script>
+<script>
+  Macy({
+    container: '.macyContainer',
+    trueOrder: false,
+    waitForImages: true,
+    margin: 16,
+    columns: 4,
+    breakAt: {
+      1200: 4,
+      992: 3,
+      768: 2,
+      480: 1
+    }
+  });
+</script>
 
 <!-- Footer -->
 <div class="footer">
