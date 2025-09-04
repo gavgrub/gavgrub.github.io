@@ -1,0 +1,57 @@
+.project {
+    gap: 2rem;
+    width: fit-content;
+    background-color: #f2f2f2;
+}
+
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5px;
+    background-color: #d1d1d1;
+}
+
+@media (max-width: 768px) {
+    .project-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+.project-image {
+    width: 100%;
+    aspect-ratio: 3 / 2;
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block; 
+}
+
+/* Tech Badges */
+.tech-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    font-size: 1rem;
+}
+
+.badge {
+    display: inline-block;
+    padding: 0 0.4rem;
+    border: 2px solid currentColor;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    background: transparent;
+}
+
+/* Technology colors */
+.badge.html   { color: #E44D26; }
+.badge.css    { color: #1572B6; }
+.badge.js     { color: #ae9c15; }
+.badge.python { color: #3776AB; }
+.badge.java   { color: #B07219; }
