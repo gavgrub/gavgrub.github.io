@@ -19,10 +19,20 @@
 <div class="page">
 
     <!-- Navbar -->
-    <div class="navbar">
-        <a href="index.html" class="navbar-button">Home</a>
-        <a href="projects.html" class="navbar-button selected">Projects</a>
-        <a href="involvement.html" class="navbar-button">Involvement</a>
+    <div class="navbar" id="navbar">
+        <div class="navbar-visible" id="navbarVisible">
+            <a href="index.html" class="navbar-button">Home</a>
+            <a href="projects.html" class="navbar-button selected">Projects</a>
+            <a href="involvement.html" class="navbar-button">Involvement</a>
+            <a href="publications.html" class="navbar-button">Publications</a>
+        </div>
+
+        <div class="navbar-overflow">
+            <button class="navbar-button hamburger" id="hamburger" aria-label="Menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="navbar-hidden" id="navbarHidden"></div>
+        </div>
     </div>
 
     <!-- Content -->
@@ -134,5 +144,9 @@
     <p>Developed by Gavin Grubert</p>
     <p>Licensed Under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a></p>
 </div>
+
+<!-- Scripts -->
+<script src="scripts/navbar.js"></script>
+
 </body>
 </html>

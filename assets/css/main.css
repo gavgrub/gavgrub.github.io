@@ -155,6 +155,60 @@ h1 {
     color: #202931;
 }
 
+/* Containers */
+.navbar-visible {
+    display: flex;
+    height: 100%;
+}
+
+/* Overflow container */
+.navbar-overflow {
+    margin-left: auto;
+    position: relative;
+    height: 100%;
+}
+
+/* Hamburger button */
+.hamburger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.hamburger i {
+    font-size: 1.8rem;
+}
+
+/* Hidden dropdown */
+.navbar-hidden {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background: rgba(32, 41, 49, 0.95);
+    min-width: 180px;
+    z-index: 10;
+    flex-direction: column;
+}
+
+/* Make buttons vertical inside dropdown */
+.navbar-hidden .navbar-button {
+    justify-content: flex-start;
+    height: 50px;
+}
+
+.navbar-hidden .navbar-button:hover {
+    color: #18BFEF;
+}
+
+/* Show dropdown */
+.navbar-hidden.show {
+    display: flex;
+}
+
 /* Footer */
 .footer {
     margin-top: 4rem;
