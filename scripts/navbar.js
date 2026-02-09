@@ -20,8 +20,7 @@ function updateNavbar() {
 
     const availableWidth =
         navbar.clientWidth -
-        hamburger.offsetWidth -   // 👈 now always valid
-        10;
+        hamburger.offsetWidth - 10;
 
     // Move items progressively
     while (visible.scrollWidth > availableWidth && visible.children.length > 0) {
