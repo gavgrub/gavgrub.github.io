@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/projects.css">
+    <link rel="stylesheet" href="assets/css/popup.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 </head>
 
 <body>
@@ -39,97 +41,114 @@
         <div class="divider"></div>
 
         <div class="project-list">
-            <!-- Interactive Watershed Viewer -->
-            <div class="text project">
-                <h3>Watershed Visualizer</h3>
-                <p>A visualization of the South Saskatchewan River Sub-Basin.</p>
-                <div class="project-image"><img src="img/projects/watershed.png"></div>
 
-                <div class="tech-badges">
-                    <span class="badge html">HTML</span>
-                    <span class="badge css">CSS</span>
-                    <span class="badge js">JavaScript</span>
+            <!-- Interactive Watershed Viewer -->
+            <div class="text project" onclick="openPopup('popup1')">
+                <div class="project-title">
+                    <h3>Watershed Visualizer</h3>
+                    <div class="tech-badges">
+                        <span class="badge html"><i class="devicon-html5-plain"></i></span>
+                        <span class="badge css"><i class="devicon-css3-plain"></i></span>
+                        <span class="badge js"><i class="devicon-javascript-plain"></i></span>
+                    </div>
                 </div>
+                <p>Interactive South Saskatchewan River Basin visualization.</p>
+                <div class="project-image"><img src="img/projects/watershed.png"></div>
             </div>
 
             <!-- Spirits of Steel: A New Dawn -->
-            <div class="text project">
-                <h3>Spirits of Steel: A New Dawn</h3>
-                <p>A grand strategy game / alt history simulator.</p>
-                <div class="project-image"><img src="img/projects/sosand.png"></div>
-
-                <div class="tech-badges">
-                    <span class="badge python">Python</span>
+            <div class="text project" onclick="openPopup('popup1')">
+                <div class="project-title">
+                    <h3>Spirits of Steel: A New Dawn</h3>
+                    <div class="tech-badges">
+                        <span class="badge python"><i class="devicon-python-plain"></i></span>
+                    </div>
                 </div>
+                <p>Grand strategy game / alt history simulator.</p>
+                <div class="project-image"><img src="img/projects/sosand.png"></div>
             </div>
 
             <!-- Hotel Manager -->
-            <div class="text project">
-                <h3>Hotel Manager</h3>
-                <p>Hotel management software, the final project for CPSC 233.</p>
-                <div class="project-image"><img src="img/projects/hotelManager.png"></div>
-
-                <div class="tech-badges">
-                    <span class="badge java">Java</span>
-                    <span class="badge css">CSS</span>
+            <div class="text project" onclick="openPopup('popup1')">
+                <div class="project-title">
+                    <h3>Hotel Manager</h3>
+                        <div class="tech-badges">
+                        <span class="badge java"><i class="devicon-java-plain"></i></span>
+                        <span class="badge css"><i class="devicon-css3-plain"></i></span>
+                    </div>
                 </div>
+                <p>Hotel management software, term project for CPSC 233.</p>
+                <div class="project-image"><img src="img/projects/hotelManager.png"></div>
             </div>
 
             <!-- SEAWA Website -->
             <div class="text project">
-                <h3>Impartial Prejudice</h3>
+                <div class="project-title" onclick="openPopup('popup1')">
+                    <h3>Impartial Prejudice</h3>
+                    <div class="tech-badges">
+                        <span class="badge python"><i class="devicon-python-plain"></i></span>
+                    </div>
+                </div>
                 <p>TikTok algorithm currator, 2nd place at Hack The Bias '26.</p>
                 <div class="project-image"><img src="img/projects/impartialPrejudice.png"></div>
-
-                <div class="tech-badges">
-                    <span class="badge python">Python</span>
-                </div>
             </div>
 
             <!-- Fightbuild -->
-            <div class="text project">
-                <h3>Fightbuild</h3>
+            <div class="text project" onclick="openPopup('popup1')">
+                <div class="project-title">
+                    <h3>Fightbuild</h3>
+                    <div class="tech-badges">
+                        <span class="badge python"><i class="devicon-python-plain"></i></span>
+                    </div>
+                </div>
                 <p>Survival game with zombie rabbits.</p>
                 <div class="project-image"><img src="img/projects/fightbuild.png"></div>
-
-                <div class="tech-badges">
-                    <span class="badge python">Python</span>
-                </div>
             </div>
 
             <!-- Mandelbrot Set -->
-            <div class="text project">
-                <h3>Mandelbrot Set Visualizer</h3>
-                <p>A program which draws the <a href="https://en.wikipedia.org/wiki/Mandelbrot_set">Mandelbrot Set</a>.</p>
-                <div class="project-image"><img src="img/projects/mandelbrot.png"></div>
-
-                <div class="tech-badges">
-                    <span class="badge python">Python</span>
+            <div class="text project" onclick="openPopup('popup1')">
+                <div class="project-title">
+                    <h3>Mandelbrot Set Visualizer</h3>
+                    <div class="tech-badges">
+                        <span class="badge python"><i class="devicon-python-plain"></i></span>
+                    </div>
                 </div>
+                <p>A script which renders the <a href="https://en.wikipedia.org/wiki/Mandelbrot_set">Mandelbrot Set</a>.</p>
+                <div class="project-image"><img src="img/projects/mandelbrot.png"></div>
             </div>
 
             <!-- World Generator -->
-            <div class="text project">
-                <h3>Block Pusher</h3>
+            <div class="text project" onclick="openPopup('popup1')">
+                <div class="project-title">
+                    <h3>Block Pusher</h3>
+                    <div class="tech-badges">
+                        <span class="badge python"><i class="devicon-python-plain"></i></span>
+                    </div>
+                </div>
                 <p>A minecraft mod, 1st place at DESS '24.</p>
                 <div class="project-image"><img src="img/projects/blockPusher.png"></div>
-
-                <div class="tech-badges">
-                    <span class="badge python">Python</span>
-                </div>
             </div>
 
             <!-- RTP -->
-            <div class="text project">
-                <h3>Robot Training Protocol</h3>
+            <div class="text project" onclick="openPopup('popup1')">
+                <div class="project-title">
+                    <h3>Robot Training Protocol</h3>
+                    <div class="tech-badges">
+                        <span class="badge python"><i class="devicon-python-plain"></i></span>
+                    </div>
+                </div>
                 <p>Unnecessarily difficult puzzle-platformer.</p>
                 <div class="project-image"><img src="img/projects/rtp.png"></div>
-
-                <div class="tech-badges">
-                    <span class="badge python">Python</span>
-                </div>
             </div>
         </div>
+    </div>
+</div>
+
+<!-- Popups -->
+<div id="popup1" class="popup">
+    <div class="popup-content">
+        <h2>Work In Progress</h2>
+        <p>Yes</p>
     </div>
 </div>
 
@@ -142,6 +161,7 @@
 <!-- Scripts -->
 <script src="scripts/navbar.js"></script>
 <script src="scripts/sparkle.js"></script>
+<script src="scripts/popup.js"></script>
 
 </body>
 </html>
