@@ -17,7 +17,9 @@ window.addEventListener("load", () => {
   canvas.style.zIndex = "-1";
 
   let stars = [];
-  const STAR_COUNT = 250;
+
+  const STAR_DENSITY = 0.0005;
+  const MAX_STARS = 400;
 
   function resizeCanvas() {
     canvas.width = window.innerWidth;
@@ -26,7 +28,13 @@ window.addEventListener("load", () => {
 
   function createStars() {
     stars = [];
-    for (let i = 0; i < STAR_COUNT; i++) {
+
+    const starCount = Math.min(
+      Math.floor(canvas.width * canvas.height * STAR_DENSITY),
+      MAX_STARS
+    );
+
+    for (let i = 0; i < starCount; i++) {
       stars.push({
         x: Math.random() * canvas.width,
         y: Math.random() * canvas.height,
@@ -50,7 +58,7 @@ window.addEventListener("load", () => {
 
       ctx.beginPath();
       ctx.arc(star.x, star.y, star.radius, 0, Math.PI * 2);
-      ctx.fillStyle = `rgba(255,255,255,${star.alpha})`;
+      ctx.fillStyle = `rgba(255, 255, 255, ${star.alpha})`;
       ctx.shadowBlur = 8;
       ctx.shadowColor = "white";
       ctx.fill();
