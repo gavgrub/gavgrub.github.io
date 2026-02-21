@@ -33,4 +33,4 @@ function updateNavbar() {
 }
 
 window.addEventListener("resize", updateNavbar);
-window.addEventListener("load", updateNavbar);
+window.addEventListener("DOMContentLoaded", updateNavbar);
