@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg1"
+   width="256"
+   height="256"
+   viewBox="0 0 256 256"
+   sodipodi:docname="icon.svg"
+   inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath4">
+      <rect
+         style="fill:#073c5c;fill-opacity:1;stroke-width:0.707107"
+         id="rect4"
+         width="128"
+         height="128"
+         x="128"
+         y="128" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath5">
+      <rect
+         style="fill:#073c5c;fill-opacity:1;stroke-width:0.707107"
+         id="rect5"
+         width="128"
+         height="128"
+         x="0"
+         y="128" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath6">
+      <rect
+         style="fill:#073c5c;fill-opacity:1;stroke-width:0.707107"
+         id="rect6"
+         width="128"
+         height="128"
+         x="128"
+         y="0" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath7">
+      <rect
+         style="fill:#073c5c;fill-opacity:1;stroke-width:0.707107"
+         id="rect7"
+         width="128"
+         height="128"
+         x="0"
+         y="0" />
+    </clipPath>
+  </defs>
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="2.135131"
+     inkscape:cx="49.879843"
+     inkscape:cy="195.07"
+     inkscape:window-width="1920"
+     inkscape:window-height="991"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g1" />
+  <g
+     inkscape:groupmode="layer"
+     inkscape:label="Image"
+     id="g1">
+    <circle
+       style="fill:#d98410;fill-opacity:1;stroke-width:1.18676"
+       id="path1"
+       cy="128"
+       cx="128"
+       r="128"
+       inkscape:label="orange"
+       clip-path="url(#clipPath7)"
+       transform="rotate(180,128,128)" />
+    <circle
+       style="fill:#555555;stroke-width:1.18676;fill-opacity:1"
+       id="path1-8"
+       cy="128"
+       cx="128"
+       r="128"
+       inkscape:label="grey"
+       clip-path="url(#clipPath6)" />
+    <circle
+       style="fill:#073c5c;stroke-width:1.18676;fill-opacity:1"
+       id="path1-8-1"
+       cy="128"
+       cx="128"
+       r="128"
+       inkscape:label="dark blue"
+       clip-path="url(#clipPath5)" />
+    <circle
+       style="fill:#328cc1;fill-opacity:1;stroke-width:1.18676"
+       id="path1-8-2"
+       cy="128"
+       cx="128"
+       inkscape:label="light blue"
+       r="128"
+       clip-path="url(#clipPath4)"
+       transform="rotate(180,128,128)" />
+  </g>
+</svg>
