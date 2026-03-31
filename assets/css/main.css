@@ -172,7 +172,7 @@ h1 {
 /* Overflow container */
 .navbar-overflow {
     margin-left: auto;
-    position: relative;
+    display: flex;
     height: 100%;
 }
 
@@ -181,13 +181,13 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-
     visibility: hidden;
     pointer-events: none;
-}
-
-.hamburger i {
     font-size: 1.8rem;
+    width: 60px;
+
+    padding: 0;
+    margin: 0;
 }
 
 /* Hidden dropdown */
@@ -245,30 +245,20 @@ h1 {
 }
 
 /* Contact form */
-form label {
-    display: block;
-    margin-bottom: 1.2rem;
-    font-size: 1rem;
-}
-
 input, textarea {
     width: 100%;
-    padding: 0.5rem;
+    padding: 0.75rem 0;
     border: none;
     border-bottom: 2px solid #d1d1d1;
     background: transparent;
     font-family: inherit;
-    font-size: inherit;
+    font-size: 1.1rem;
     color: #202931;
     outline: none;
-    resize: none;
-    overflow: hidden;
-    line-height: 1.5em;
-    height: 1.5em;
-}
-
-textarea {
     box-sizing: border-box;
+    display: block;
+    overflow: hidden;
+    resize: none;
 }
 
 input:focus, textarea:focus {
