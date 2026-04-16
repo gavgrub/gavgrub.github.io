@@ -1,4 +1,4 @@
-// This code handles the interactable elements of the popups
+// This code handles the interactable elements of the popup
 function openPopup(id) {
   document.getElementById(id).style.display = 'flex';
 
@@ -15,7 +15,7 @@ function closePopup(id) {
 
 window.onclick = function (event) {
   if (event.target.classList.contains('popup')) {
-    event.target.style.display = 'none';
+    event.target.style.display = 'none';  
 
     // re-enable background scroll
     document.body.style.overflow = '';

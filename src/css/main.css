@@ -95,6 +95,10 @@ h1 {
     color: var(--text-light);
 }
 
+.socials {
+    letter-spacing: var(--divider-size);
+}
+
 /* Content */
 .page {
     width: 100%;
@@ -125,6 +129,12 @@ h1 {
 }
 
 /* Navbar */
+[data-component="src/components/navbar.html"] {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 .navbar {
     display: flex;
     align-items: flex-start;

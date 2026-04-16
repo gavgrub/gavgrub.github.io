@@ -4,10 +4,10 @@
     <title>Gavin Grubert - Projects</title>
     <link rel="icon" href="img/graphics/icon.svg" type="image/svg">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="assets/css/variables.css">
-    <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/projects.css">
-    <link rel="stylesheet" href="assets/css/popup.css">
+    <link rel="stylesheet" href="src/css/variables.css">
+    <link rel="stylesheet" href="src/css/main.css">
+    <link rel="stylesheet" href="src/css/projects.css">
+    <link rel="stylesheet" href="src/css/popup.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 </head>
@@ -22,20 +22,7 @@
 <div class="page">
 
     <!-- Navbar -->
-    <div class="navbar" id="navbar">
-        <div class="navbar-visible" id="navbarVisible">
-            <a href="index.html" class="navbar-button">Home</a>
-            <a href="projects.html" class="navbar-button selected">Projects</a>
-            <a href="publications.html" class="navbar-button">Publications</a>
-        </div>
-
-        <div class="navbar-overflow">
-            <button class="navbar-button hamburger" id="hamburger" aria-label="Menu">
-                <i class="fa-solid fa-bars"></i>
-            </button>
-            <div class="navbar-hidden" id="navbarHidden"></div>
-        </div>
-    </div>
+    <div data-component="src/components/navbar.html"></div>
 
     <!-- Content -->
     <div class="content">
@@ -199,14 +186,11 @@
 </div>
 
 <!-- Footer -->
-<div class="footer">
-    <p>Developed by Gavin Grubert</p>
-    <p>Licensed Under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a></p>
-</div>
+<div data-component="src/components/footer.html"></div>
 
 <!-- Scripts -->
-<script src="scripts/navbar.js"></script>
-<script src="scripts/popup.js"></script>
+<script src="src/js/popup.js"></script>
+<script src="src/js/components.js"></script>
 
 </body>
 </html>
