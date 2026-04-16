@@ -1,0 +1,36 @@
+:root {
+    /* Colors */
+    --text-light: white;
+    --page-bg-color: #f2f2f2;
+    --page-divider-color: #d1d1d1;
+
+    --header-bg-color: rgba(242, 242, 242, 0.2);
+    --text-dark: #202931;
+    --bg-color: #080F13;
+    --popup-bg-color: rgba(8, 15, 19, 0.85);
+    --outline: #000000;
+
+    --highlight: #18BFEF;
+    --selection-color: #073C5C;
+
+    --html-color: #E44D26;
+    --css-color: #1572B6;
+    --js-color: #c2ac0a;
+    --python-color: #3776AB;
+    --java-color: #B07219;
+
+    /* Sizings */
+    --page-width: 1000px;
+    --text-width: 700px;
+    --padding: 2rem;
+    --margin: 4rem;
+    --divider-size: 0.2rem;
+    --font-size: 1.25rem;
+    --button-height: 4rem;
+
+    /* Other */
+    --font: "Merriweather", Georgia, serif;
+    --header-font: 'Montserrat', sans-serif;
+    --transition: 0.1s ease;
+    --transition-size:
+}

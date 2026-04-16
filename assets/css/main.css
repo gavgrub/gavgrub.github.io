@@ -1,13 +1,14 @@
 body {
-    background-color: #080F13;
-    color: #202931;
+    background-color: var(--bg-color);
+    color: var(--text-dark);
     background-image: url('../../img/graphics/background.webp');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    padding: 2rem;
-    font-size: 1.25rem;
-    font-family: "Merriweather", Georgia, serif;
+    padding: var(--padding);
+    margin: 0;
+    font-size: var(--font-size);
+    font-family: var(--font);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -15,29 +16,29 @@ body {
 
 /* Text selection styling */
 ::selection {
-    background: #073C5C;
-    color: #ffffff;
+    background: var(--selection-color);
+    color: var(--text-light);
 }
 
 ::-moz-selection {
-    background: #073C5C;
-    color: #ffffff;
+    background: var(--selection-color);
+    color: var(--text-light);
 }
 
 body a {
-    color: #202931;
+    color: var(--text-dark);
     text-decoration: underline dotted;
 }
 
 body a:hover {
-    color: #18BFEF;
+    color: var(--highlight);
     text-decoration: none;
-    transition: 0.1s ease;
+    transition: var(--transition);
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Source Sans Pro', Helvetica, sans-serif;
-    color: #202931;
+    font-family: var(--header-font);
+    color: var(--text-dark);
 }
 
 h1 {
@@ -47,16 +48,16 @@ h1 {
 
 .divider {
     width: 100%;
-    height: 2px;
-    background-color: #d1d1d1;
+    height: var(--divider-size);
+    background-color: var(--page-divider-color);
 }
 
 /* Header */
 .header {
-    color: #f2f2f2;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    color: var(--page-bg-color);
+    text-shadow: -1px -1px 0 var(--outline), 1px -1px 0 var(--outline), -1px 1px 0 var(--outline), 1px 1px 0 var(--outline);
     width: 100%;
-    height: calc(100vh - 60px - 2px - 2rem);
+    height: calc(100vh - var(--button-height) - var(--padding));
     min-height: fit-content;
     text-align: center;
     display: flex;
@@ -84,25 +85,20 @@ h1 {
 }
 
 .header a {
-    color: white;
-    letter-spacing: 0.5rem;
-    transition: 0.1s ease;
+    color: var(--text);
+    transition: var(--transition);
 }
 
 .header h1 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--header-font);
     margin: 0;
-    color: white;
-}
-
-.header .socials {
-    margin-top: 4px;
+    color: var(--text-light);
 }
 
 /* Content */
 .page {
-    width: calc(100% + 2rem);
-    max-width: 1000px;
+    width: 100%;
+    max-width: var(--page-width);
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -111,14 +107,14 @@ h1 {
 }
 
 .page .text {
-    padding: 2rem;
-    max-width: 700px;
-    width: calc(100% - 4rem);
+    padding: var(--padding);
+    max-width: var(--text-width);
+    width: calc(100% - var(--margin));
     line-height: 1.6;
 }
 
 .content {
-    background-color: #f2f2f2;
+    background-color: var(--page-bg-color);
     width: 100%;
     flex-direction: column;
     justify-content: center;
@@ -132,21 +128,20 @@ h1 {
 .navbar {
     display: flex;
     align-items: flex-start;
-    height: 60px;
+    height: var(--button-height);
     width: 100%;
-    max-width: 1000px;
-    background: rgba(242, 242, 242, 0.2);
+    max-width: var(--page-width);
+    background: var(--header-bg-color);
 }
 
 .navbar-button {
     display: flex;
     align-items: center;
     justify-content: center;
-
-    padding: 0 20px;
+    padding: 0 var(--padding);
     text-decoration: none;
     background: transparent;
-    color: white;
+    color: var(--text-light);
     font-weight: bold;
     border: none;
     cursor: pointer;    
@@ -154,13 +149,17 @@ h1 {
 }
 
 .navbar-button:hover {
-    background: rgba(242, 242, 242, 0.2);
-    transition: 0.1s ease;
+    color: var(--highlight);
+    background-color: var(--header-bg-color);
 }
 
 .selected {
-    background-color: #f2f2f2 !important;
-    color: #202931;
+    background-color: var(--page-bg-color);
+    color: var(--text-dark);
+}
+
+.selected:hover {
+    background-color: var(--page-bg-color);
 }
 
 /* Containers */
@@ -183,9 +182,9 @@ h1 {
     justify-content: center;
     visibility: hidden;
     pointer-events: none;
-    font-size: 1.8rem;
-    width: 60px;
-
+    font-size: var(--header-font);
+    width: var(--button-height);
+    background-color: rgba(0, 0, 0, 0);
     padding: 0;
     margin: 0;
 }
@@ -194,22 +193,31 @@ h1 {
 .navbar-hidden {
     display: none;
     position: absolute;
-    right: 0;
+    right: var(--padding);
     top: 100%;
-    background: rgba(32, 41, 49, 0.95);
-    min-width: 180px;
+    background: var(--page-bg-color);
     z-index: 10;
     flex-direction: column;
+    background-color: var(--page-bg-color) !important;
 }
 
 /* Make buttons vertical inside dropdown */
 .navbar-hidden .navbar-button {
-    justify-content: flex-start;
-    height: 50px;
+    justify-content: center;
+    height: var(--button-height);
+    color: var(--text-dark);
+    background-color: transparent !important;
+    border: var(--divider-size) solid var(--page-divider-color);
+    box-sizing: border-box;
+    margin-top: calc(var(--divider-size) * -1);
+}
+
+.navbar-hidden .navbar-button:first-child {
+    margin-top: 0;
 }
 
 .navbar-hidden .navbar-button:hover {
-    color: #18BFEF;
+    color: var(--highlight);
 }
 
 /* Show dropdown */
@@ -219,13 +227,13 @@ h1 {
 
 /* Footer */
 .footer {
-    margin-top: 4rem;
-    color: white;
+    margin-top: var(--margin);
+    color: var(--text-light);
     text-align: center;
 }
 
 .footer a {
-    color: white;
+    color: var(--text-light);
 }
 
 /* Video */
@@ -240,47 +248,55 @@ h1 {
   border: 0;
 }
 
-#navbarHidden.show {
-    border: 2px solid #d1d1d1;
-}
-
 /* Contact form */
 input, textarea {
     width: 100%;
-    padding: 0.75rem 0;
+    padding: 0 0 var(--font-size) 0;
     border: none;
-    border-bottom: 2px solid #d1d1d1;
+    border-bottom: var(--divider-size) solid var(--page-divider-color);
     background: transparent;
-    font-family: inherit;
-    font-size: 1.1rem;
-    color: #202931;
+    font-family: var(--font);
+    font-size: var(--font-size);
+    color: var(--text-dark);
     outline: none;
     box-sizing: border-box;
     display: block;
     overflow: hidden;
     resize: none;
+    transition: 0.1s ease;
 }
 
 input:focus, textarea:focus {
-    border-bottom: 2px solid #18BFEF;
+    border-bottom: var(--divider-size) solid var(--highlight);
+
+}
+
+input, textarea, .divider, button {
+    margin-top: var(--padding);
+}
+
+input:first-child, .divider:first-child {
+    margin-top: 0;
 }
 
 /* Button */
 button {
-    margin-top: 1rem;
-    padding: 0.5rem 1.2rem;
-
-    background: #202931;
-    color: #ffffff;
-    border: transparent;
-
-    font-family: 'Source Sans Pro', Helvetica, sans-serif;
+    height: var(--button-height);
+    padding: 0 var(--padding);
+    background-color: var(--page-bg-color);
+    color: var(--text-dark);
+    border: var(--divider-size) solid var(--page-divider-color);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font);
+    font-size: var(--font-size);
     font-weight: bold;
-
     cursor: pointer;
     transition: 0.1s ease;
+    box-sizing: border-box;
 }
 
 button:hover {
-    background: #18BFEF;
+    color: var(--highlight);
 }

@@ -1,21 +1,17 @@
 .project {
     width: fit-content !important; 
-    background-color: #f2f2f2;
+    background-color: var(--page-bg-color);
     cursor: pointer;
-    outline: 2px solid transparent;
-    outline-offset: -2px;
+    outline: var(--divider-size) solid transparent;
+    outline-offset: -var(--divider-size);
     transition: outline-color 0.2s ease;
-}
-
-.project:hover {
-    outline-color: #18BFEF;
 }
 
 .project-list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 2.5px;
-    background-color: #d1d1d1;
+    gap: var(--divider-size);
+    background-color: var(--page-divider-color);
 }
 
 @media (max-width: 768px) {
@@ -50,23 +46,21 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-
-    width: 2rem;
-    height: 2rem;
-
+    width: var(--padding);
+    height: var(--padding);
     border-radius: 0.5rem;
 }
 
 /* Icon */
 .badge i {
-    font-size: 1.4rem;
-    color: white;
+    font-size: var(--font-size);
+    color: var(--text-light);
     line-height: 1;
 }
 
 /* Technology backgrounds */
-.badge.html   { background: #E44D26; }
-.badge.css    { background: #1572B6; }
-.badge.js     { background: #c2ac0a; }
-.badge.python { background: #3776AB; }
-.badge.java   { background: #B07219; }
+.badge.html   { background: var(--html-color); }
+.badge.css    { background: var(--css-color); }
+.badge.js     { background: var(--js-color); }
+.badge.python { background: var(--python-color); }
+.badge.java   { background: var(--java-color); }
