@@ -50,18 +50,8 @@
                 </div>
             </div>
 
-            <!-- Fightbuild -->
-            <div class="text project" onclick="openPopup('fightbuild')">
-                <h3>Fightbuild</h3>
-                <p>Survival game with zombie rabbits.</p>
-                <div class="project-image"><img src="img/projects/fightbuild.webp"></div>
-                <div class="tech-badges">
-                    <span class="badge python"><i class="devicon-python-plain"></i></span>
-                </div>
-            </div>
-
             <!-- Interactive Watershed Viewer -->
-            <div class="text project" onclick="openPopup('wip')">
+            <div class="text project" onclick="openPopup('watershed')">
                 <h3>Watershed Visualizer</h3>
                 <p>Interactive South Saskatchewan River Basin visualization.</p>
                 <div class="project-image"><img src="img/projects/watershed.webp"></div>
@@ -69,6 +59,16 @@
                     <span class="badge html"><i class="devicon-html5-plain"></i></span>
                     <span class="badge css"><i class="devicon-css3-plain"></i></span>
                     <span class="badge js"><i class="devicon-javascript-plain"></i></span>
+                </div>
+            </div>
+
+            <!-- Fightbuild -->
+            <div class="text project" onclick="openPopup('wip')">
+                <h3>Fightbuild</h3>
+                <p>Survival game with zombie rabbits.</p>
+                <div class="project-image"><img src="img/projects/fightbuild.webp"></div>
+                <div class="tech-badges">
+                    <span class="badge python"><i class="devicon-python-plain"></i></span>
                 </div>
             </div>
 
@@ -143,8 +143,8 @@
         <p>A project built for the Hack the Bias 2026 hackathon. The hackathon had the theme of developing software to combat bias in a given area of society. My group (not taking the prompt seriously) decided that instead of reduce bias, we should develop software to maximize bias, arguing that it would display where bias exists online. As a result, Impartial Predjudice was born.</p>
         <img src="img/projects/impartial_prejudice_team.webp">
         <p>Using automated interaction on TikTok, it prompts the user for a target concept (dogs, music, politics) and proceeds to scroll on TikTok, analyzing video metadata and visuals with AI, scoring each video's relevance, and selectively engaging with aligned content. Over time, this skews the feed towards or away from a single viewpoint, showing how opposing "noise" is gradually silenced. The project highlights the mechanisms behind algorithmic bias and has implications for education, research, and policy.</p>
-        <p><a href="https://github.com/kyaLee123/HackaCookers">GitHub</a></p>
         <p><a href="https://devpost.com/software/impartial-prejudice?_gl=1*c9ifrd*_gcl_au*MTA2ODcxNzkwNy4xNzc0OTUwMDYw*_ga*MjU2MTExMjEwLjE3NzQ5NTAwNjA.*_ga_0YHJK3Y10M*czE3NzQ5NTAwNjAkbzEkZzEkdDE3NzQ5NTAwNzYkajQ0JGwwJGgw">Devpost</a></p>
+        <p><a href="https://github.com/kyaLee123/HackaCookers">GitHub</a></p>
     </div>
 </div>
 
@@ -175,21 +175,19 @@
     </div>
 </div>
 
-<!-- Fightbuild -->
-<div id="fightbuild" class="popup">
+<!-- Watershed Visualizer -->
+<div id="watershed" class="popup">
     <div class="popup-content">
 
-        <h2>Fightbuild</h2>
+        <h2>Watershed Visualizer</h2>
 
-        <div class="video">
-            <iframe
-                src="https://www.youtube.com/embed/8ym3R2pKNu0"
-                title="YouTube video"
-                frameborder="0"
-                allow="autoplay; encrypted-media"
-                allowfullscreen>
-            </iframe>
-        </div>
+        <img src="img/projects/rivers.webp">
+
+        <p>The first website I developed, made during my internship at <a href="https://seawa.ca/">South East Alberta Watershed Alliance</a>. It helps visualize waterflow in the South Saskatchewan River Sub-Basin, a watershed extending from Alberta to Saskatchewan.</p>
+        <p>Display options include river flow, major settlements, reservoirs. You can also click on rivers to check it's wikipedia page, or see the outline of either the SSRSB or SEAWA area.</p>
+
+        <p><a href="https://gavgrub.github.io/water-flow/">Website</a></p>
+        <p><a href="https://github.com/gavgrub/water-flow">GitHub</a></p>
 
     </div>
 </div>
