@@ -9,6 +9,7 @@
     background: var(--popup-bg-color);
     z-index: 10000;
     overflow: auto;
+    line-height: var(--line-height);
 }
 
 /* Popup content box */
@@ -36,4 +37,9 @@
     color: var(--highlight);
     text-decoration: none;
     transition: 0.1s ease;
+}
+
+.popup-content img {
+    width: 100%;
+    height: auto;
 }

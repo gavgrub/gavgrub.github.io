@@ -27,6 +27,8 @@
     --divider-size: 0.2rem;
     --font-size: 1.25rem;
     --button-height: 4rem;
+    --line-height: 1.6;
+    --bobby-width: 80px;
 
     /* Other */
     --font: "Merriweather", Georgia, serif;

@@ -1,0 +1,9 @@
+.bobby-container {
+    text-align: center;
+}
+
+#bobby {
+    width: var(--bobby-width);
+    image-rendering: pixelated;
+    transition: transform 0.2s ease;
+}
