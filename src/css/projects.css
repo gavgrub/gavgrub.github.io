@@ -4,7 +4,16 @@
     cursor: pointer;
     outline: var(--divider-size) solid transparent;
     outline-offset: -var(--divider-size);
-    transition: outline-color 0.2s ease;
+}
+
+.project:hover h1,
+.project:hover h2,
+.project:hover h3,
+.project:hover h4,
+.project:hover h5,
+.project:hover h6 {
+    color: var(--highlight);
+    transition: var(--transition);
 }
 
 .project-list {

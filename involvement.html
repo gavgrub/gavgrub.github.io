@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Gavin Grubert | Involvement</title>
+    <link rel="icon" href="img/graphics/icon.svg" type="image/svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="src/css/variables.css">
+    <link rel="stylesheet" href="src/css/main.css">
+    <link rel="stylesheet" href="src/css/projects.css">
+    <link rel="stylesheet" href="src/css/popup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+</head>
+
+<body>
+
+<!-- Header -->
+<div class="header fade-in">
+    <h1>Involvement</h1>
+</div>
+
+<div class="page">
+
+    <!-- Navbar -->
+    <div data-component="src/components/navbar.html"></div>
+
+    <!-- Content -->
+    <div class="content">
+        <div class="divider"></div>
+
+        <div class="project-list">
+
+            <!-- Impartial Prejudice  -->
+            <div class="text project" onclick="openPopup('csus')">
+                <h3>Computer Science Undergraduate Society</h3>
+                <p>VP Academic</p>
+                <div class="project-image"><img src="img/involvement/csus.webp"></div>
+            </div>
+
+            <!-- Spirits of Steel: A New Dawn -->
+            <div class="text project" onclick="openPopup('soundstage')">
+                <h3>Schulich Soundstage</h3>
+                <p>VP Logistics</p>
+                <div class="project-image"><img src="img/involvement/soundstage.webp"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- CSUS -->
+<div id="csus" class="popup">
+    <div class="popup-content">
+
+        <h2>Computer Science Undergraduate Society</h2>
+        <p>The Computer Science Undergraduate Society (CSUS) is a social club at the University of Calgary for those interested in computer science. It provides a space for students to engage in academic and social events, and operates a study / hangout room.</p>
+        <p>CSUS hosts the largest undergraduate hackathon in Calgary, Calgary Hacks. In 2026, the event had 414 participants, producing 31 submissions.</p>
+        <img src="img/involvement/calhacks.webp">
+        <p>As (Co) Vice President Academic, I collaborate with faculty and the other execs to run events supporting student learning.</p>
+        <p>In 2026, my key contributions involved hosting a LeetCode workshop, a review session for CPSC 251 (Theoretical Foundations of Computer Science I), and a Git workshop for SENG 300 (Introduction to Software Engineering). The later two were organized in collaboration with their respective course coordinators.</p>
+        <img src="img/involvement/git-workshop.webp">
+        <p><a href="https://csus.club/">CSUS Website</a></p>
+        <p><a href="https://calgaryhacks.ca/">Calgary Hacks Website</a></p>
+    
+    </div>
+</div>
+
+<!-- soundstage -->
+<div id="soundstage" class="popup">
+    <div class="popup-content">
+
+        <h2>Schulich Soundstage</h2>
+        <p>Schulich Soundstage is the largest music club at the University of Calgary. The club is responsible for hosting music events such as open mics, jam sessions, and a music festival. Additionally, it offers gig opportunities, workshops, and a radio show on CJSW.</p>
+        <img src="img/involvement/open-mic.webp">
+        <p>As Vice President Logistics, I manage club transactions, funding applications, and queing forms during open mic nights.</p>
+        <p>I hold two other roles in the club. Firstly, on it's web development team, where I help maintain it's website. Secondly, on the club's gig roster, where I perform guitar and bass at events such as the uCalgary open house or uCalgary strong festival.</p>
+        <img src="img/involvement/band.webp">
+        <p><a href="https://schulichsoundstageucalgary.xyz/#">Schulich Soundstage Website</a></p>
+
+    </div>
+</div>
+
+<!-- Footer -->
+<div data-component="src/components/footer.html"></div>
+
+<!-- Scripts -->
+<script src="src/js/popup.js"></script>
+<script src="src/js/components.js"></script>
+
+</body>
+</html>
