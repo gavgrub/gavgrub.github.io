@@ -14,6 +14,23 @@ body {
     align-items: center;
 }
 
+/* Twinkling stars */
+.star-field {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    pointer-events: none;
+}
+
+#star-canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
 /* Text selection styling */
 ::selection {
     background: var(--selection-color);
@@ -310,3 +327,41 @@ button {
 button:hover {
     color: var(--highlight);
 }
+
+/* Tech Badges */
+.tech-badges {
+    display: flex;
+    gap: 0.5rem;
+}
+
+/* Base badge */
+.badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--padding);
+    height: var(--padding);
+    border-radius: 0.5rem;
+}
+
+/* Icon */
+.badge i {
+    font-size: var(--font-size);
+    color: var(--text-light);
+    line-height: 1;
+}
+
+/* Technology backgrounds */
+.badge.html   { background: var(--html-color); }
+.badge.css    { background: var(--css-color); }
+.badge.js     { background: var(--js-color); }
+.badge.python { background: var(--python-color); }
+.badge.java   { background: var(--java-color); }
+.badge.jupyter { background: var(--jupyter-color); }
+
+.badge.youtube { background: var(--youtube-color); }
+.badge.devpost { background: var(--devpost-color); }
+.badge.itch { background: var(--itch-color); }
+.badge.github { background: var(--github-color); }
+.badge.gitlab { background: var(--gitlab-color); }
+.badge.website { background: var(--website-color); }

@@ -19,6 +19,14 @@
     --python-color: #3776AB;
     --java-color: #B07219;
 
+    --youtube-color: #FF0000;
+    --github-color: #181717;
+    --devpost-color: #003E54;
+    --itch-color: #FA5C5C;
+    --jupyter-color: #F37626;
+    --website-color: #0000EE;
+    --gitlab-color: #FC6D26;
+
     /* Sizings */
     --page-width: 1000px;
     --text-width: 700px;
@@ -29,6 +37,7 @@
     --button-height: 4rem;
     --line-height: 1.6;
     --bobby-width: 80px;
+    --image-width: 200px;
 
     /* Other */
     --font: "Merriweather", Georgia, serif;

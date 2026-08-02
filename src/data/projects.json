@@ -1,0 +1,107 @@
+[
+    {   
+        "title": "Online Multiplayer Game Platform",
+        "description": "A platform to play multiplayer games like chess or tic-tac-toe with friends. Created for my team's SENG 300 term project.",
+        "image": "img/projects/chess.webp",
+        "tech": ["js", "python", "css"],
+        "links": {
+            "gitlab": "https://csgit.ucalgary.ca/seng300w26/pg-3/seng300-202601-pg-3"
+        }
+    },
+    {   
+        "title": "(Grand) Master Audio",
+        "description": "An audio player which is controlled through chess. Created for the 2026 Calgary Lacks Hackathon.",
+        "image": "img/projects/callacks26.webp",
+        "tech": ["python"],
+        "links": {
+            "github": "https://github.com/gavgrub/CalLacks26"
+        }
+    },
+    {
+        "title": "Auto-GG",
+        "description": "A program to automatically generate SELF applications for UofC clubs. Called auto-gg as it automatically does all the work Gavin Grubert was hired to do.",
+        "image": "img/projects/auto_gg.webp",
+        "tech": ["python"],
+        "links": {
+            "github": "https://github.com/gavgrub/auto-gg"
+        }
+    },
+    {
+        "title": "Impartial Prejudice",
+        "description": "A script which currates a TikTok feed based on a given prompt. Runner up for the Hack The Bias 2026 hackathon.",
+        "image": "img/projects/impartial_prejudice.webp",
+        "tech": ["python", "jupyter"],
+        "links": {
+            "youtube": "https://www.youtube.com/watch?v=9ZXH2yfqZs0",
+            "github": "https://github.com/kyaLee123/HackaCookers",
+            "devpost": "https://devpost.com/software/impartial-prejudice"
+        }
+    },
+    {
+        "title": "South Saskatchewan River",
+        "description": "A website which allows users to view information about the South Saskatchewan River, and more broadly, the South Saskatchewan River Basin.",
+        "image": "img/projects/watershed.webp",
+        "tech": ["html", "css", "js"],
+        "links": {
+            "github": "https://github.com/gavgrub/water-flow",
+            "website": "https://gavgrub.github.io/water-flow/"
+        }
+    },
+    {
+        "title": "Hotel Manager",
+        "description": "Hotel management software designed to be used as an administrative tool for hotel companies. Created for my team's CPSC 231 term project.",
+        "image": "img/projects/hotel_manager.webp",
+        "tech": ["java", "css"],
+        "links": {
+            "github": "https://github.com/gavgrub/hotel-manager"
+        }
+    },
+    {
+        "title": "Spirits of Steel: A New Dawn",
+        "description": "An alt-history grand strategy game, and the sequel to Spirits of Steel. With 400+ playable countries, 8 maps based on history and popular alt history scenarios, and more.",
+        "image": "img/projects/sosand.webp",
+        "tech": ["python"],
+        "links": {
+            "youtube": "https://www.youtube.com/watch?v=yf35bJ6vftU",
+            "itch": "https://gavgrub.itch.io/sosand"
+        }
+    },
+    {
+        "title": "Block Pusher",
+        "description": "A Minecraft mod for a puzzle mini game where you push blocks around a level to get to an exit. Winner of the DESS 2024 Hackathon.",
+        "image": "img/projects/block_pusher.webp",
+        "tech": ["python"],
+        "links": {
+            "github": "https://github.com/gavgrub/block-pusher"
+        }
+    },
+    {
+        "title": "It's Die Not Dice",
+        "description": "A game made for the GMTK 2022 game jam. You play as a dice robot, and traverse a space station using a number of different movement styles.",
+        "image": "img/projects/die_not_dice.webp",
+        "tech": ["python"],
+        "links": {
+            "youtube": "https://www.youtube.com/watch?v=nJg08gFSBQc",
+            "itch": "https://gavgrub.itch.io/its-die-not-dice"
+        }
+    },
+    {
+        "title": "Fightbuild",
+        "description": "A survival game where you crash land onto an archipelago and must fight an onslaught of zombie rabbits, potentially escaping in the process.",
+        "image": "img/projects/fightbuild.webp",
+        "tech": ["python"],
+        "links": {
+            "youtube": "https://www.youtube.com/watch?v=8ym3R2pKNu0",
+            "itch": "https://gavgrub.itch.io/fightbuild"
+        }
+    },
+    {
+        "title": "Robot Training Protocol",
+        "description": "A platformer game where you must traverse a level multiple times, with blocks disapearing every lap.",
+        "image": "img/projects/rtp.webp",
+        "tech": ["python"],
+        "links": {
+            "itch": "https://gavgrub.itch.io/rtp"
+        }
+    }
+]

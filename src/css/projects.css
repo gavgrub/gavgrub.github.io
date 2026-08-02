@@ -6,16 +6,6 @@
     outline-offset: -var(--divider-size);
 }
 
-.project:hover h1,
-.project:hover h2,
-.project:hover h3,
-.project:hover h4,
-.project:hover h5,
-.project:hover h6 {
-    color: var(--highlight);
-    transition: var(--transition);
-}
-
 .project-list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -43,33 +33,3 @@
     object-position: center;
     display: block; 
 }
-
-/* Tech Badges */
-.tech-badges {
-    display: flex;
-    gap: 0.5rem;
-}
-
-/* Base badge */
-.badge {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: var(--padding);
-    height: var(--padding);
-    border-radius: 0.5rem;
-}
-
-/* Icon */
-.badge i {
-    font-size: var(--font-size);
-    color: var(--text-light);
-    line-height: 1;
-}
-
-/* Technology backgrounds */
-.badge.html   { background: var(--html-color); }
-.badge.css    { background: var(--css-color); }
-.badge.js     { background: var(--js-color); }
-.badge.python { background: var(--python-color); }
-.badge.java   { background: var(--java-color); }

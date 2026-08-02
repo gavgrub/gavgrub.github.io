@@ -24,6 +24,8 @@ async function loadComponents() {
       console.error(`Error loading ${file}:`, err);
     }
   }
+
+  document.dispatchEvent(new Event("componentsLoaded"));
 }
 
 document.addEventListener("DOMContentLoaded", loadComponents);
