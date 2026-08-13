@@ -58,9 +58,15 @@
     display: block;
 }
 
-@container (max-width: 768px) {
+@container (max-width: 480px) {
     .project-small-image {
-        aspect-ratio: 1 / 1;
+        width: 100%;
+    }
+
+    .top-row {
+        flex-direction: column;
+        align-items: stretch;
+        gap: var(--padding);
     }
 }
 
@@ -75,7 +81,7 @@
 .project-links {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: var(--gap);
 }
 
 .project-links a {

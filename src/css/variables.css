@@ -38,6 +38,7 @@
     --line-height: 1.6;
     --bobby-width: 80px;
     --image-width: 200px;
+    --gap: 0.5rem;
 
     /* Other */
     --font: "Merriweather", Georgia, serif;

@@ -55,7 +55,12 @@ function renderProject(project) {
 
 async function loadProjects() {
     const container = document.querySelector(".project-list-small");
-    if (!container) return;
+    if (!container) return; // this page has no project list, nothing to do
+
+    // Route swaps can call this on a page that has already been
+    // rendered once before (e.g. navigating away and back), so clear
+    // out any stale cards first.
+    container.innerHTML = "";
 
     try {
         const response = await fetch("src/data/projects.json");
@@ -77,3 +82,4 @@ async function loadProjects() {
 }
 
 document.addEventListener("DOMContentLoaded", loadProjects);
+document.addEventListener("pageChanged", loadProjects);

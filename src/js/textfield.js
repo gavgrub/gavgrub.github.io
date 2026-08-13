@@ -1,7 +1,6 @@
-document.addEventListener("DOMContentLoaded", function () {
+function initTextfield() {
     const textarea = document.querySelector("textarea");
-
-    console.log("Textarea:", textarea);
+    if (!textarea) return; // this page has no textarea, nothing to do
 
     function autoResize() {
         this.style.height = "0px";
@@ -10,4 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     textarea.addEventListener("input", autoResize);
     autoResize.call(textarea);
-});
+}
+
+document.addEventListener("DOMContentLoaded", initTextfield);
+document.addEventListener("pageChanged", initTextfield);
