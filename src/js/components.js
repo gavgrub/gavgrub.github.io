@@ -144,15 +144,34 @@ async function navigateTo(pathname, pushState = true) {
       window.location.href = pathname;
       return;
     }
- 
+
+    // Swap the header too (title/subtitle/socials differ per page),
+    // not just the content div.
+    const header = document.querySelector(".header");
+    const newHeader = doc.querySelector(".header");
+    if (header && newHeader) {
+      header.innerHTML = newHeader.innerHTML;
+      header.className = newHeader.className;
+    }
+
     content.innerHTML = newContent.innerHTML;
     document.title = doc.title;
  
     if (pushState) {
       window.history.pushState({}, "", pathname);
     }
- 
-    window.scrollTo(0, 0);
+
+    // Close the hamburger dropdown if it was open, since the navbar
+    // itself isn't re-fetched on route changes and would otherwise
+    // stay expanded after navigating.
+    const navbarHidden = document.getElementById("navbarHidden");
+    if (navbarHidden) {
+      navbarHidden.classList.remove("show");
+    }
+
+    // Intentionally not resetting scroll position here: navigation
+    // preserves wherever the user currently is on the page. The
+    // browser automatically clamps scrollY if the new page is shorter.
     highlightActiveNav();
 
     document.dispatchEvent(new Event("pageChanged"));
