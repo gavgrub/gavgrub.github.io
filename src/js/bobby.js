@@ -2,10 +2,8 @@ let bobbyInterval = null;
 
 function initBobby() {
     const bobby = document.getElementById("bobby");
-    if (!bobby) return; // this page has no bobby, nothing to do
+    if (!bobby) return;
 
-    // Clear any interval left over from a previous page, so we don't
-    // stack intervals writing to a detached (or a new) element.
     if (bobbyInterval) {
         clearInterval(bobbyInterval);
         bobbyInterval = null;
@@ -25,7 +23,7 @@ function initBobby() {
         bobby.src = frame.src;
         bobby.style.transform = frame.flip ? "scaleX(-1)" : "scaleX(1)";
         index = (index + 1) % frames.length;
-    }, 800); // adjust speed here
+    }, 800);
 }
 
 document.addEventListener("DOMContentLoaded", initBobby);

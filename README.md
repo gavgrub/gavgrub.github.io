@@ -1,5 +1,8 @@
 # gavgrub.github.io
-The personal website for Gavin Grubert.
+The personal website for Gavin Grubert. Contains the following pages:
+- Home: about section and a form to contact me.
+- Projects: list of software projects which I've worked on.
+- Publications: list of research projects which I've worked on.
 ## Installation
 Navigate to powershell and run the following:
 ```bash
