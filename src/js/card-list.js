@@ -5,6 +5,7 @@ const techIcons = {
     python: "devicon-python-plain",
     java: "devicon-java-plain",
     jupyter: "devicon-jupyter-plain",
+    seawa: "../../img/graphics/seawa.svg",
 };
 
 const linkIcons = {
@@ -65,11 +66,14 @@ function renderCard(item) {
     card.className = "card-item" + (item.image ? "" : " no-image");
 
     const techBadges = (item.tech || [])
-        .map(t => `
-            <span class="badge ${t}">
-                <i class="${techIcons[t] || ""}"></i>
-            </span>
-        `).join("");
+        .map(t => {
+            const icon = techIcons[t] || "";
+            const isImage = /\.(svg|png|webp|jpe?g)$/i.test(icon);
+            const inner = isImage
+                ? `<img src="${icon}" alt="${t}" class="tech-icon-img">`
+                : `<i class="${icon}"></i>`;
+            return `<span class="badge ${t}">${inner}</span>`;
+        }).join("");
 
     const linkBadges = Object.entries(item.links || {})
         .map(([type, url]) => `

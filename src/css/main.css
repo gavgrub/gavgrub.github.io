@@ -352,11 +352,11 @@ button:hover {
 }
 
 /* Technology backgrounds */
-.badge.html   { background: var(--html-color); }
-.badge.css    { background: var(--css-color); }
-.badge.js     { background: var(--js-color); }
+.badge.html { background: var(--html-color); }
+.badge.css { background: var(--css-color); }
+.badge.js { background: var(--js-color); }
 .badge.python { background: var(--python-color); }
-.badge.java   { background: var(--java-color); }
+.badge.java { background: var(--java-color); }
 .badge.jupyter { background: var(--jupyter-color); }
 
 .badge.youtube { background: var(--youtube-color); }
@@ -365,3 +365,5 @@ button:hover {
 .badge.github { background: var(--github-color); }
 .badge.gitlab { background: var(--gitlab-color); }
 .badge.website { background: var(--website-color); }
+
+.badge.seawa { background: var(--seawa-color); }

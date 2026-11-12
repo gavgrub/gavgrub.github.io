@@ -1,0 +1,16 @@
+[
+    {   
+        "title": "Assessing Data Readiness: A Review of SEAWA's Resources for the State of the Watershed Report",
+        "description": "A systematic review of available internal and external data sources, coded against the Freshwater Health Index to assess SEAWA's readiness for an updated State of the Watershed report.",
+        "image": "img/publications/cypress_hills.webp",
+        "tech": ["seawa"],
+        "links": {}
+    },
+    {   
+        "title": "A Literature Review of Chloride in the South Saskatchewan River Sub Basin",
+        "description": "A literature review on chloride in the freshwater systems of southeast Alberta, covering sources, impacts, monitoring, management, water literacy, and climate.",
+        "image": "img/publications/ssr.webp",
+        "tech": ["seawa"],
+        "links": {}
+    }
+]
